@@ -1,0 +1,190 @@
+body{
+
+    margin: 0;
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+}
+
+/*Global View*/
+
+.container{
+    background-color: whitesmoke;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+
+.header-container{
+    background-color: rgb(37, 37, 37);
+    min-height: 100px;
+    margin-bottom: 50px;
+    position: fixed;
+    width: 100%;
+
+   
+
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+  
+    
+}
+
+
+.mybutton{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 11px 25px;
+    display: inline-block;
+    margin-left: 20px;
+   
+}
+
+.burgernav{
+    display: none;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+
+.col{
+    background-color: rgb(214, 89, 89);
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.hidethisbox{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+p::first-line{
+    font-weight: bold;
+    font-size: 1.2rem;
+ 
+}
+p{
+    padding-top: 8px;
+
+}
+
+
+/*Tablet View*/
+
+@media (max-width: 768px){
+    
+    .col{
+        width: 45%;
+    }
+
+   
+
+    .burgernav{
+        display: block;
+        padding-right: 30px;
+        margin-right: 50px;
+        
+       
+    }
+
+    
+    nav{
+        display: none;
+    }
+
+   
+    .burgeritems{
+        
+        background-color: rgb(214, 89, 89);
+        position: absolute;
+        padding: 20px 20px;
+        margin-left: ;
+      
+    }
+
+
+    .burgerbutton{
+        
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: white;
+        
+    }
+    
+}
+
+.hidethisbox{
+    display: block;
+}
+
+
+/*Mobile View*/
+
+@media (max-width: 600px){
+
+    .col{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    header{
+       
+        text-align: center;
+    }
+
+    .burgernav{
+        margin-bottom: 20px;
+        margin-right: 5px;
+        
+    }
+    .burgermenu{
+        justify-content: right;
+        display: flex;
+    }
+  
+    .logo{
+        padding: 40px 0;
+    }
+
+    
+   
+    .burgerbutton{
+        
+        
+        display: flex;
+        text-decoration: none;
+        color: white;
+
+        
+    }
+
+    .burgeritems{
+       margin-left: -30px;
+       position: absolute;
+    }
+}
